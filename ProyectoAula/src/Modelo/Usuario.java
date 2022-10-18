@@ -1,90 +1,44 @@
 package Modelo;
 
-public class Usuario { // En esta clase se piden todos los datos necesarios para que se registren los nuevos usaurios a la eps
-    private String nombre;
-    private String apellido;
-    private String genero;
-    private int edad;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Usuario extends Persona{ // En esta clase se piden todos los datos necesarios para que se registren los nuevos usaurios a la eps
+    Scanner a = new Scanner(System.in); 
     private String tSangre;
-    private double documento;
-    private String usuario1;
-    private double pin1;
+    private int i;
+    private int nUsuarios=1;
+    private ArrayList<ArrayList> usuarios = new ArrayList<>();
 
-    public Usuario(String nombre, String apellido, String genero, int edad, String tSangre, double documento, String usuario1, double pin1) {
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.genero = genero;
-        this.edad = edad;
+    
+    
+
+    public Usuario() {
+        
+    }
+
+    public Usuario(String nombre, String apellido, String genero, int edad, int documento, String usuario, int pin, ArrayList s) {
+        super(nombre, apellido, genero, edad, documento, usuario, pin, s);
         this.tSangre = tSangre;
-        this.documento = documento;
-        this.usuario1 = usuario1;
-        this.pin1 = pin1;
     }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getApellido() {
-        return apellido;
-    }
-
-    public String getGenero() {
-        return genero;
-    }
-
-    public int getEdad() {
-        return edad;
-    }
-
-    public String gettSangre() {
+    public String getTSangre() {
         return tSangre;
     }
 
-    public double getDocumento() {
-        return documento;
-    }
-
-    public String getUsuario1() {
-        return usuario1;
-    }
-
-    public double getPin1() {
-        return pin1;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public void setApellido(String apellido) {
-        this.apellido = apellido;
-    }
-
-    public void setGenero(String genero) {
-        this.genero = genero;
-    }
-
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
-
-    public void settSangre(String tSangre) {
+    public void setTSangre(String tSangre) {
         this.tSangre = tSangre;
     }
 
-    public void setDocumento(double documento) {
-        this.documento = documento;
-    }
+    @Override
+    public ArrayList Registrar() {
+        for(i=nUsuarios;i<=nUsuarios;i++){
+            usuarios.add(super.Registrar());
 
-    public void setUsuario1(String usuario1) {
-        this.usuario1 = usuario1;
-    }
-
-    public void setPin1(double pin1) {
-        this.pin1 = pin1;
+        }
+        nUsuarios++;
+        return super.s;
     }
 
     
-    
+
 }

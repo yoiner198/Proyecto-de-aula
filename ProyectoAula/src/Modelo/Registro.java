@@ -1,12 +1,13 @@
 package Modelo;
 
 
-public class Registro { //  esta clase obtiene los datos de registro de nuevos usuarios y de contratacion de nuevo personal
+public class Registro{ //  esta clase obtiene los datos de registro de nuevos usuarios y de contratacion de nuevo personal
     public String admin;
     public Usuario persona;
     public Personal contratar;
+    
 
-    public Registro(String admin, Usuario persona, Personal contratar) {
+    public Registro(String admin, Usuario persona, Personal contratar){
         this.admin = admin;
         this.persona = persona;
         this.contratar = contratar;
@@ -37,5 +38,8 @@ public class Registro { //  esta clase obtiene los datos de registro de nuevos u
     }
     
     
+    public void RegistrarU(){
+        
+    }
     
 }
