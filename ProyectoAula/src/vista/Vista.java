@@ -1,18 +1,20 @@
 package vista;
 
-import Modelo.Acita;
-import Modelo.Usuario;
+import Modelo.Cita;
+import Modelo.Persona;
 
 public class Vista {
 
     
     public static void main(String[] args) {
-        //Usuario registrar = new Usuario();
-        Acita si = new Acita();
+        Persona per = new Persona();
+        Cita si = new Cita();
         
-        //registrar.Registrar();
-
+        per.Registrar();
+        per.iniciarSesion();
         si.apartarCita();
+        si.consultarCita();
+        si.modCita();
     }
     
 }

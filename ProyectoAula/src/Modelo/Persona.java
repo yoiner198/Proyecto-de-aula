@@ -1,6 +1,5 @@
 package Modelo;
 
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Persona {
@@ -12,13 +11,14 @@ public class Persona {
     protected int documento;
     protected String usuario;
     protected int pin;
-    protected ArrayList s;
+    protected String camUsuario;
+    protected int campPin;
     
     public Persona(){
         
     }
 
-    public Persona(String nombre, String apellido, String genero, int edad, int documento, String usuario, int pin, ArrayList s) {
+    public Persona(String nombre, String apellido, String genero, int edad, int documento, String usuario, int pin, String camUsuario, int campPin) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.genero = genero;
@@ -26,9 +26,9 @@ public class Persona {
         this.documento = documento;
         this.usuario = usuario;
         this.pin = pin;
-        this.s = s;
+        this.camUsuario = camUsuario;
+        this.campPin = campPin;
     }
-
 
     public String getNombre() {
         return nombre;
@@ -85,10 +85,25 @@ public class Persona {
     public void setPin(int pin) {
         this.pin = pin;
     }
-    
-    public ArrayList Registrar(){
-        
-        System.out.println("      REGISTRO DE USUARIO COMUN     "+"\nINGRESE LOS SIGUINETES DATOS: ");
+
+    public String getCamUsuario() {
+        return camUsuario;
+    }
+
+    public void setCamUsuario(String camUsuario) {
+        this.camUsuario = camUsuario;
+    }
+
+    public int getCampPin() {
+        return campPin;
+    }
+
+    public void setCampPin(int campPin) {
+        this.campPin = campPin;
+    }
+
+    public void Registrar(){
+        System.out.println("      REGISTRO DE USUARIO     "+"\nINGRESE LOS SIGUINETES DATOS: ");
         System.out.println("Nombre: "); this.nombre = a.nextLine();
         System.out.println("Apellido: "); this.apellido = a.nextLine();
         System.out.println("Documento: "); this.documento = a.nextInt();
@@ -98,9 +113,14 @@ public class Persona {
         System.out.println("PIN: (solo numeros enteros)"); this.pin = a.nextInt();
         System.out.println("Su usuario es: "+this.usuario);
         System.out.println("Su pin es: "+this.pin);
-        
-        return this.s;
+    }  
+    public void iniciarSesion(){
+        System.out.println("    INICIO DE SESION    ");
+        System.out.println("Usuario: ");
+        this.camUsuario = a.nextLine();
+        this.camUsuario = a.nextLine();
+        System.out.println("Pin: ");
+        this.campPin = a.nextInt();
     }
-
-    
+  
 }
