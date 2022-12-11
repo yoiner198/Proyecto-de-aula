@@ -1,6 +1,0 @@
-P;7564546476;Luis;Andrés;Cataño;;357;5352424;luisandres;cataño
-P;7464747;Yoiner;David;Martinez;;189;633535;yoiner;yoiner123
-P;52552525;Carmen;;Sierra;;null;null;carmen;carmen
-P;6353535;Maria;;Fernanda;;null;null;marianita;maria
-P;857574;Maria;Camila;Galvan;;null;null;maria;maria
-P;1006617069;Luis;Daniel;Pinto;Gómez;667;45252525;luis;luis25
