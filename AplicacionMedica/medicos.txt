@@ -1,0 +1,4 @@
+M;5242424;Maria;;Sanchez;;0;0;true
+M;45252525;Camila;Maria;Lopez;;1;1;true
+M;5352424;Marin;;Zabaleta;;1;1;true
+M;633535;Daniela;Dayana;Gómez;Pinto;1;1;true
